@@ -1,7 +1,10 @@
+import dotenv from 'dotenv';
+dotenv.config();
+
 import OpenAI from "openai/index.mjs";
 
 const openAi = new OpenAI ({
-    apiKey : '',
+    apiKey: `${process.env.OPENAI_API_KEY}`,
     dangerouslyAllowBrowser: true
 });
 
