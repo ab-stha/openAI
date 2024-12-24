@@ -5,7 +5,7 @@ import OpenAI from "openai/index.mjs";
 
 const openAi = new OpenAI ({
     apiKey: `${process.env.OPENAI_API_KEY}`,
-    dangerouslyAllowBrowser: true
+    
 });
 
 const message = [
@@ -24,4 +24,6 @@ const response = await openAi.chat.completions.create({
     messages: message
 });
 
-console.log(response);
+const answer = JSON.stringify(response.choices[0].message.content);
+
+console.log(answer);

@@ -3,5 +3,8 @@
     "dotenv": "^16.4.7",
     "openai": "^4.77.0"
   },
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "start": "app.js"
+  }
 }
