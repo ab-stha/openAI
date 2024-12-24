@@ -29,11 +29,11 @@ const openAi = new OpenAI ({
 const message = [
     {
         role : 'system',
-        content : 'You are a general knowledge expert and can have a go at answering most queries.'
+        content : 'You are an expert at poetry.'
     },
     {
         role : 'user',
-        content : 'Why is the sky blue?'
+        content : 'Write me a simple poem about digital screens'
     }
 ];
 
