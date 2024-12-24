@@ -33,7 +33,7 @@ const message = [
     },
     {
         role : 'user',
-        content : 'Write me a simple poem about digital screens'
+        content : 'Write me a simple 5 sentence poem about tv.'
     }
 ];
 
